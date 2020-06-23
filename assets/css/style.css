@@ -1,0 +1,245 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* APPLICATION CODE WRITTEN  */
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
+html,
+body {
+  width: 100%;
+  margin: 0px auto;
+  overflow-x: hidden;
+  padding: 0px;
+}
+header {
+  background-image: url("../images/code_background.png");
+  background-size: cover;
+  min-height: 750px;
+  font-family: "Playfair Display", serif;
+  color: white;
+}
+.row {
+  width: 100%;
+}
+.inline {
+  display: inline-flex;
+}
+/* nav  */
+nav {
+  height: 50px;
+  padding: 5px;
+}
+nav img {
+  position: absolute;
+  right: 100px;
+}
+/* add when links are placed in **** */
+
+/* nav > ul {
+  display: inline-flex;
+  position: absolute;
+  right: 100px;
+  padding: 20px;
+} */
+/* nav li {
+  padding: 5px 10px;
+  position: relative;
+  right: 0;
+} */
+
+/* end add when links are placed in ***  */
+
+/* header area  */
+.header-left-side {
+  width: 50%;
+}
+.header-right-side {
+  padding-left: 100px;
+  width: 50%;
+}
+.header-right-side > h1 {
+  color: white;
+  font-size: 93px;
+  line-height: 1.25;
+  text-align: left;
+}
+
+/* header left side  */
+.dynamic-code {
+  color: #00a03e;
+  font-family: "Fira Code", monospace;
+  font-size: 20px;
+  height: 300px;
+  margin-left: 10%;
+  padding: 20px 0;
+  position: relative;
+  top: 180px;
+  width: 90%;
+}
+.skill-container {
+  display: inline-flex;
+  font-size: 40px;
+  left: 100px;
+  position: relative;
+  top: 300px;
+}
+#dynamic-skill-list {
+  padding-left: 10px;
+}
+
+/* image style  */
+.rounded-circle {
+  border: 2px solid white;
+  border-radius: 50%;
+}
+#profile-img {
+  height: 50px;
+  position: absolute;
+  width: 50px;
+}
+
+/* about section  */
+#about-title {
+  display: block;
+  font-size: 30px;
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+  width: 100%;
+}
+.about-left,
+.about-right {
+  width: 50%;
+}
+.about-left {
+  padding: 20px 100px;
+}
