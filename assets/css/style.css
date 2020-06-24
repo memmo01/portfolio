@@ -137,7 +137,6 @@ html,
 body {
   width: 100%;
   margin: 0px auto;
-  overflow-x: hidden;
   padding: 0px;
 }
 header {
@@ -179,18 +178,39 @@ nav img {
 /* end add when links are placed in ***  */
 
 /* header area  */
-.header-left-side {
-  width: 50%;
-}
-.header-right-side {
-  padding-left: 100px;
-  width: 50%;
-}
-.header-right-side > h1 {
+
+header .sect-right > h1 {
   color: white;
   font-size: 93px;
   line-height: 1.25;
   text-align: left;
+}
+.block {
+  display: block;
+}
+.sect-left,
+.sect-right {
+  width: 50%;
+}
+header .sect-right {
+  width: 45%;
+}
+header .sect-left {
+  width: 55%;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.title {
+  display: block;
+  font-size: 30px;
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+  width: 100%;
 }
 
 /* header left side  */
@@ -199,10 +219,10 @@ nav img {
   font-family: "Fira Code", monospace;
   font-size: 20px;
   height: 300px;
-  margin-left: 10%;
+  margin-left: 40px;
   padding: 20px 0;
   position: relative;
-  top: 180px;
+  top: 140px;
   width: 90%;
 }
 .skill-container {
@@ -221,25 +241,66 @@ nav img {
   border: 2px solid white;
   border-radius: 50%;
 }
-#profile-img {
+header #profile-img {
   height: 50px;
   position: absolute;
   width: 50px;
 }
 
-/* about section  */
-#about-title {
-  display: block;
-  font-size: 30px;
+#profile-img {
+  height: 250px;
+  position: relative;
+  width: 250px;
   margin: auto;
-  padding: 30px;
-  text-align: center;
+  display: block;
+  top: 50px;
+}
+
+/* about section  */
+
+.sect-txt-left,
+.sect-txt-right,
+.sect-txt {
+  padding: 20px 55px;
+  font-size: 20px;
+  max-width: 50%;
+  box-sizing: border-box;
+}
+
+/* porfolio slider  */
+.outter-track {
   width: 100%;
+  overflow-x: hidden;
+  background-color: green;
 }
-.about-left,
-.about-right {
-  width: 50%;
+
+.inner-track {
+  background-color: blue;
+  width: 2200px;
+  height: 100px;
+  margin: 50px 0;
+  padding: 20px 0;
+  display: inline-flex;
+  position: relative;
+  left: 0px;
 }
-.about-left {
-  padding: 20px 100px;
+
+.slide-box {
+  height: 50px;
+  width: 294px;
+  margin: 5px;
+  background-color: red;
+}
+/* portfolio staggered section  */
+#portfolio img {
+  width: 80%;
+  margin: auto;
+  display: block;
+}
+#portfolio .row {
+  margin: 20px auto;
+}
+
+.sect-txt-left {
+  text-align: right;
 }
