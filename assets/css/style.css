@@ -301,6 +301,48 @@ header #profile-img {
   margin: 20px auto;
 }
 
+#portfolio h2 {
+  padding-bottom: 10px;
+  font-size: 29px;
+}
+#portfolio h3 {
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+
+#portfolio li,
+#portfolio p {
+  font-size: 18px;
+}
+#portfolio p {
+  text-align: justify;
+}
+#portfolio ul {
+  display: inline-flex;
+  padding-bottom: 10px;
+}
+#portfolio li {
+  padding: 5px 10px;
+}
+#portfolio .sect-right p,
+#portfolio .sect-left p {
+  width: 450px;
+  padding-bottom: 10px;
+}
+#portfolio .sect-right {
+  padding: 20px 0 20px 100px;
+}
+#portfolio .sect-left {
+  padding: 20px 55px 20px 0;
+}
+#portfolio .sect-left p {
+  float: right;
+}
+
 .sect-txt-left {
   text-align: right;
+}
+
+.clearfix {
+  clear: both;
 }
