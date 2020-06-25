@@ -81,12 +81,13 @@ codeDisplay()
 navmenu.addEventListener("click", function (e) {
   e.preventDefault();
   let nmenu = document.getElementsByClassName("nav-menu");
-  nmenu[0].style.width = "430px";
+  nmenu[0].classList.add("active-nav")
 });
 
 //closing navmenu
 navmenuclose.addEventListener("click", function (e) {
   e.preventDefault();
   let nmenu = document.getElementsByClassName("nav-menu");
-  nmenu[0].style.width = "0px";
+  nmenu[0].classList.remove("active-nav")
+
 });

@@ -142,9 +142,10 @@ body {
 .nav-menu {
   position: fixed;
   background-color: white;
+  box-shadow: rgb(0, 0, 0) 0px 0px 5px inset;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   z-index: 999;
   color: black;
@@ -156,6 +157,10 @@ body {
 .nav-menu #close {
   position: absolute;
   right: 20px;
+}
+
+.active-nav{
+  width:430px;
 }
 
 .nav-menu .link-contain {
@@ -173,17 +178,24 @@ body {
   width: 100px;
   height: 100px;
   display: block;
-  margin-bottom: 50px;
+  margin: 0 auto 20px auto;
   position: static;
-  margin: auto;
-  left: 7px;
+}
+#nav-social >a{
+  display:inline-flex;
+  padding:0 5px;
+  width:40px;
+}
+#nav-social .social-icons{
+  height:40px;
+  width:40px;
 }
 .nav-contact {
-  margin-top: 300px;
+  text-align:center;
+  margin-top: 250px;
 }
 .nav-contact > h2 {
   font-size: 30px;
-  text-align: center;
   margin-bottom: 10px;
 }
 .nav-contact > ul {
@@ -421,6 +433,10 @@ header #profile-img {
   header {
     height: 560px;
   }
+  
+.active-nav{
+  width:100%;
+}
   .row-flex {
     flex-direction: column;
   }
@@ -435,6 +451,7 @@ header #profile-img {
     font-size: 65px;
     padding-left: 25px;
   }
+
 
   .sect-txt-left,
   .sect-txt-right,
