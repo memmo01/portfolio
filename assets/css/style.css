@@ -139,7 +139,60 @@ body {
   margin: 0px auto;
   padding: 0px;
 }
+.nav-menu {
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 999;
+  color: black;
+  transition: 1s;
+  width: 0px;
+  padding: 20px 0;
+}
 
+.nav-menu #close {
+  position: absolute;
+  right: 20px;
+}
+
+.nav-menu .link-contain {
+  margin-top: 30px;
+  min-width: 430px;
+}
+.nav-menu a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 30px;
+}
+.nav-menu img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin-bottom: 50px;
+  position: static;
+  margin: auto;
+  left: 7px;
+}
+.nav-contact {
+  margin-top: 300px;
+}
+.nav-contact > h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.nav-contact > ul {
+  width: 140px;
+  margin: auto;
+}
+.nav-contact li {
+  padding: 5px 0;
+}
 header {
   background-image: url("../images/code_background.png");
   background-size: cover;

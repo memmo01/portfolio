@@ -1,4 +1,6 @@
 let skills = ["javasript", "es6", "jQuery", "HTML", "CSS"];
+let navmenu = document.getElementById("hamburger");
+let navmenuclose = document.getElementById("close");
 let dynamicCodeEl = document.getElementsByClassName("dynamic-code");
 let code = ` let displaySkills = () => {
       let count = 0;
@@ -40,7 +42,7 @@ const displaySkills = () => {
   }, 2000);
 };
 
-const codeTrial = () => {
+const codeDisplay = () => {
   return new Promise((resolve, reject) => {
     let codeCharacters = code.split("");
     let count = 0;
@@ -48,7 +50,7 @@ const codeTrial = () => {
       reject("The codeCharacters has no length");
     }
     let dynamicCodeInt = setInterval(() => {
-      //check the length of the array. When then end has been reached, stop the setInterval and then return a resolved promise to run the dosplaySkills function
+      //check the length of the array. When then end has been reached, stop the setInterval and then return a resolved promise to run the displaySkills function
       if (count === codeCharacters.length - 1) {
         clearInterval(dynamicCodeInt);
         resolve("done");
@@ -62,8 +64,8 @@ const codeTrial = () => {
   });
 };
 
-// run codeTrial and when it is done run the displaySkills function
-codeTrial()
+// run codeDisplay and when it is done run the displaySkills function
+codeDisplay()
   .then((res) => {
     setTimeout(() => {
       displaySkills();
@@ -72,3 +74,19 @@ codeTrial()
   .catch((err) => {
     console.error(err);
   });
+
+// navmenu code
+
+// opening nav menu
+navmenu.addEventListener("click", function (e) {
+  e.preventDefault();
+  let nmenu = document.getElementsByClassName("nav-menu");
+  nmenu[0].style.width = "430px";
+});
+
+//closing navmenu
+navmenuclose.addEventListener("click", function (e) {
+  e.preventDefault();
+  let nmenu = document.getElementsByClassName("nav-menu");
+  nmenu[0].style.width = "0px";
+});
