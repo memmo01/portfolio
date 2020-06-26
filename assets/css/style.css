@@ -159,8 +159,8 @@ body {
   right: 20px;
 }
 
-.active-nav{
-  width:430px;
+.active-nav {
+  width: 430px;
 }
 
 .nav-menu .link-contain {
@@ -181,17 +181,17 @@ body {
   margin: 0 auto 20px auto;
   position: static;
 }
-#nav-social >a{
-  display:inline-flex;
-  padding:0 5px;
-  width:40px;
+#nav-social > a {
+  display: inline-flex;
+  padding: 0 5px;
+  width: 40px;
 }
-#nav-social .social-icons{
-  height:40px;
-  width:40px;
+#nav-social .social-icons {
+  height: 40px;
+  width: 40px;
 }
 .nav-contact {
-  text-align:center;
+  text-align: center;
   margin-top: 250px;
 }
 .nav-contact > h2 {
@@ -326,7 +326,7 @@ header #profile-img {
   width: 250px;
   margin: auto;
   display: block;
-  top: 50px;
+  top: 30px;
 }
 
 /* about section  */
@@ -433,10 +433,13 @@ header #profile-img {
   header {
     height: 560px;
   }
-  
-.active-nav{
-  width:100%;
-}
+  .nav-contact {
+    margin-top: 200px;
+  }
+  .active-nav {
+    width: 100%;
+    overflow: hidden;
+  }
   .row-flex {
     flex-direction: column;
   }
@@ -451,7 +454,6 @@ header #profile-img {
     font-size: 65px;
     padding-left: 25px;
   }
-
 
   .sect-txt-left,
   .sect-txt-right,
@@ -481,6 +483,9 @@ header #profile-img {
   }
   #portfolio .sect-right {
     padding: 0;
+  }
+  #portfolio .sect-left {
+    padding-right: 0;
   }
   #portfolio .sect-right p,
   #portfolio .sect-left p {
