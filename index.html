@@ -1,213 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mike Emmons Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mike Emmons Portfolio</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-</head>
+  <body>
+    <header>
+      <nav>
+        <i class="fa fa-2x fa-bars" id="hamburger"></i>
+        <div class="nav-menu">
+          <i class="fa fa-2x fa-times" id="close"></i>
+          <div class="link-contain">
+            <img
+              src="./assets/images/mike_headshot2.jpg"
+              class="rounded-circle"
+            />
+            <a href="#" class="link-same-page">About</a>
+            <a href="#portfolio" class="link-same-page">Portfolio</a>
+            <a href="#" class="link-same-page">Skills</a>
+            <a href="#" class="link-same-page">Contact</a>
 
-<body>
-  <header>
-    <nav>
-      <i class="fa fa-2x fa-bars" id="hamburger"></i>
-      <div class="nav-menu">
-        <i class="fa fa-2x fa-times" id="close"></i>
-        <div class="link-contain">
-          <img src="./assets/images/mike_headshot2.jpg" class="rounded-circle" />
-          <a href="#">About</a>
-          <a href="#">Portfolio</a>
-          <a href="#">Skills</a>
-          <a href="#">Contact</a>
+            <div class="nav-contact">
+              <h2>Contact</h2>
+              <ul>
+                <li>
+                  Michael Emmons
+                </li>
+                <li>
+                  Email: M@m.com
+                </li>
+                <li id="nav-social">
+                  <a href="https://github.com/memmo01" target="_blank"
+                    ><img
+                      src="./assets/images/github.png"
+                      class="social-icons"
+                      alt="github"
+                  /></a>
 
-          <div class="nav-contact">
-            <h2>Contact</h2>
+                  <a href="www.linkedin.com/in/mike-e-6841a6133" target="_blank"
+                    ><img
+                      src="./assets/images/linkedlogo.png"
+                      class="social-icons"
+                      alt="linkedin"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- contains main header section  -->
+      <div class="row inline row-flex">
+        <div class="sect-left">
+          <!-- diplays dynamic code example and the skill cycle-through  -->
+          <pre class="dynamic-code"></pre>
+          <div class="skill-container">
+            <div id="proficient-text"></div>
+            <div id="dynamic-list"></div>
+          </div>
+        </div>
+        <!-- right side of page on desktop. On mobile it will be on top of dynamic code section -->
+        <div class="sect-right">
+          <h1>
+            <span class="block">Mike</span>
+            <span class="block">Emmons. </span
+            ><span class="block">Web </span>Developer.
+          </h1>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <!-- begin new section to add about me  -->
+      <section id="about">
+        <h2 id="about-title" class="title">About</h2>
+        <div class="row inline row-flex">
+          <div class="sect-left sect-txt">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo quas
+            nobis aliquid fuga quia illo saepe necessitatibus quos accusamus
+            fugit eius dolore ut, labore sint. Magni ipsum ad error laboriosam?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore
+            consectetur animi dolorum minima totam earum explicabo aspernatur
+            sed sapiente a et voluptatibus commodi pariatur dignissimos
+            molestias, ipsa quae odio vel. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Et saepe vitae consequatur rem soluta,
+            necessitatibus sequi tenetur voluptatem modi repellendus, officia
+            illo enim voluptates totam sit impedit cum ab dolorum. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Autem iusto porro sit
+            ab perferendis non modi vel omnis, cum corporis necessitatibus
+            totam, eum dicta itaque deserunt delectus culpa voluptate
+            quaerat.lor Lorem ipsum dolor sit amet consectetur, adipisicing
+            elit. Tempore cupiditate quisquam alias, quibusdam quam ipsam facere
+            consectetur magni quia quis maiores minima excepturi enim aut,
+            repellendus qui nobis accusamus. Ratione?
+          </div>
+          <div class="sect-right">
+            <img
+              src="./assets/images/mike_headshot2.jpg"
+              id="profile-img"
+              class="rounded-circle"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Portfolio section  -->
+      <section id="portfolio">
+        <h2 id="portfolio-title" class="title">Porfolio</h2>
+        <div class="row inline row-flex">
+          <div class="sect-left">
+            <img
+              src="assets/images/node-proj-example.gif"
+              alt="node project example"
+            />
+          </div>
+          <div class="sect-right sect-txt-right">
+            <h2>Project Title</h2>
+            <h3>DESCRIPTION</h3>
+            <div class="right-p-contain">
+              <p>
+                Et saepe vitae consequatur rem soluta, necessitatibus sequi
+                tenetur voluptatem modi repellendus, officia illo enim
+                voluptates totam sit impedit cum ab dolorum. Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Autem iusto porro sit ab
+                perferendis non modi vel omnis, cum corporis necessitatibus
+                totam, eum dicta itaque deserunt delectus culpa voluptate
+                quaerat.lor Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit.
+              </p>
+            </div>
+            <h3>TOOLS USED</h3>
             <ul>
-
-              <li>
-                Michael Emmons
-              </li>
-              <li>
-                Email: M@m.com
-              </li>
-              <li id="nav-social">
-                <a href="https://github.com/memmo01" target="_blank"><img src="./assets/images/github.png"
-                    class="social-icons" alt="github"></a>
-                <a href="www.linkedin.com/in/mike-e-6841a6133" target="_blank"><img src="./assets/images/linkedlogo.png"
-                    class="social-icons" alt="linkedin"></a>
-              </li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JAVASCRIPT</li>
+              <li>etc..</li>
+            </ul>
+            <h3>VIEW PROJECT</h3>
+            <ul>
+              <li>github link</li>
+              <li>working project link</li>
             </ul>
           </div>
         </div>
-      </div>
-    </nav>
-    <!-- contains main header section  -->
-    <div class="row inline row-flex">
-      <div class="sect-left">
-        <!-- diplays dynamic code example and the skill cycle-through  -->
-        <pre class="dynamic-code"></pre>
-        <div class="skill-container">
-          <div id="proficient-text"></div>
-          <div id="dynamic-list"></div>
+
+        <div class="row inline row-flex flip">
+          <div class="sect-left sect-txt-left">
+            <h2>Project Title</h2>
+            <h3>DESCRIPTION</h3>
+            <div class="left-p-contain">
+              <p>
+                Et saepe vitae consequatur rem soluta, necessitatibus sequi
+                tenetur voluptatem modi repellendus, officia illo enim
+                voluptates totam sit impedit cum ab dolorum. Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Autem iusto porro sit ab
+                perferendis non modi vel omnis, cum corporis necessitatibus
+                totam, eum dicta itaque deserunt delectus culpa voluptate
+                quaerat.lor Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit.
+              </p>
+            </div>
+            <h3 class="clearfix">TOOLS USED</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JAVASCRIPT</li>
+              <li>etc..</li>
+            </ul>
+            <h3>VIEW PROJECT</h3>
+            <ul>
+              <li>github link</li>
+              <li>working project link</li>
+            </ul>
+          </div>
+          <div class="sect-right">
+            <img src="assets/images/drag_drop.gif" alt="node project example" />
+          </div>
         </div>
-      </div>
-      <!-- right side of page on desktop. On mobile it will be on top of dynamic code section -->
-      <div class="sect-right">
-        <h1>
-          <span class="block">Mike</span>
-          <span class="block">Emmons. </span><span class="block">Web </span>Developer.
-        </h1>
-      </div>
+
+        <div class="row inline row-flex">
+          <div class="sect-left">
+            <img
+              src="assets/images/node-proj-example.gif"
+              alt="node project example"
+            />
+          </div>
+          <div class="sect-right sect-txt-right">
+            <h2>Project Title</h2>
+            <h3>DESCRIPTION</h3>
+            <div class="right-p-contain">
+              <p>
+                Et saepe vitae consequatur rem soluta, necessitatibus sequi
+                tenetur voluptatem modi repellendus, officia illo enim
+                voluptates totam sit impedit cum ab dolorum. Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Autem iusto porro sit ab
+                perferendis non modi vel omnis, cum corporis necessitatibus
+                totam, eum dicta itaque deserunt delectus culpa voluptate
+                quaerat.lor Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit.
+              </p>
+            </div>
+            <h3>TOOLS USED</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JAVASCRIPT</li>
+              <li>etc..</li>
+            </ul>
+            <h3>VIEW PROJECT</h3>
+            <ul>
+              <li>github link</li>
+              <li>working project link</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills section  -->
+      <section id="skills">
+        <h2 id="about-title" class="title">Skills</h2>
+        <div class="row inline row-flex"></div>
+      </section>
     </div>
-  </header>
-  <div class="container">
-    <!-- begin new section to add about me  -->
-    <section id="about">
-      <h2 id="about-title" class="title">About</h2>
-      <div class="row inline row-flex">
-        <div class="sect-left sect-txt">
 
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo quas
-          nobis aliquid fuga quia illo saepe necessitatibus quos accusamus
-          fugit eius dolore ut, labore sint. Magni ipsum ad error laboriosam?
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore
-          consectetur animi dolorum minima totam earum explicabo aspernatur
-          sed sapiente a et voluptatibus commodi pariatur dignissimos
-          molestias, ipsa quae odio vel. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Et saepe vitae consequatur rem soluta,
-          necessitatibus sequi tenetur voluptatem modi repellendus, officia
-          illo enim voluptates totam sit impedit cum ab dolorum. Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Autem iusto porro sit
-          ab perferendis non modi vel omnis, cum corporis necessitatibus
-          totam, eum dicta itaque deserunt delectus culpa voluptate
-          quaerat.lor Lorem ipsum dolor sit amet consectetur, adipisicing
-          elit. Tempore cupiditate quisquam alias, quibusdam quam ipsam facere
-          consectetur magni quia quis maiores minima excepturi enim aut,
-          repellendus qui nobis accusamus. Ratione?
-        </div>
-        <div class="sect-right">
-          <img src="./assets/images/mike_headshot2.jpg" id="profile-img" class="rounded-circle" />
-        </div>
-      </div>
-    </section>
-    <!-- Portfolio section  -->
-    <section id="portfolio">
-      <h2 id="portfolio-title" class="title">Porfolio</h2>
-      <div class="row inline row-flex">
-        <div class="sect-left">
-          <img src="assets/images/node-proj-example.gif" alt="node project example" />
-        </div>
-        <div class="sect-right sect-txt-right">
-          <h2>Project Title</h2>
-          <h3>DESCRIPTION</h3>
-          <div class="right-p-contain">
-            <p>
-              Et saepe vitae consequatur rem soluta, necessitatibus sequi
-              tenetur voluptatem modi repellendus, officia illo enim
-              voluptates totam sit impedit cum ab dolorum. Lorem ipsum dolor
-              sit amet consectetur adipisicing elit. Autem iusto porro sit ab
-              perferendis non modi vel omnis, cum corporis necessitatibus
-              totam, eum dicta itaque deserunt delectus culpa voluptate
-              quaerat.lor Lorem ipsum dolor sit amet consectetur, adipisicing
-              elit.
-            </p>
-          </div>
-          <h3>TOOLS USED</h3>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JAVASCRIPT</li>
-            <li>etc..</li>
-          </ul>
-          <h3>VIEW PROJECT</h3>
-          <ul>
-            <li>github link</li>
-            <li>working project link</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="row inline row-flex flip">
-        <div class="sect-left sect-txt-left">
-          <h2>Project Title</h2>
-          <h3>DESCRIPTION</h3>
-          <div class="left-p-contain">
-            <p>
-              Et saepe vitae consequatur rem soluta, necessitatibus sequi
-              tenetur voluptatem modi repellendus, officia illo enim
-              voluptates totam sit impedit cum ab dolorum. Lorem ipsum dolor
-              sit amet consectetur adipisicing elit. Autem iusto porro sit ab
-              perferendis non modi vel omnis, cum corporis necessitatibus
-              totam, eum dicta itaque deserunt delectus culpa voluptate
-              quaerat.lor Lorem ipsum dolor sit amet consectetur, adipisicing
-              elit.
-            </p>
-          </div>
-          <h3 class="clearfix">TOOLS USED</h3>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JAVASCRIPT</li>
-            <li>etc..</li>
-          </ul>
-          <h3>VIEW PROJECT</h3>
-          <ul>
-            <li>github link</li>
-            <li>working project link</li>
-          </ul>
-        </div>
-        <div class="sect-right">
-          <img src="assets/images/drag_drop.gif" alt="node project example" />
-        </div>
-      </div>
-
-      <div class="row inline row-flex">
-        <div class="sect-left">
-          <img src="assets/images/node-proj-example.gif" alt="node project example" />
-        </div>
-        <div class="sect-right sect-txt-right">
-          <h2>Project Title</h2>
-          <h3>DESCRIPTION</h3>
-          <div class="right-p-contain">
-            <p>
-              Et saepe vitae consequatur rem soluta, necessitatibus sequi
-              tenetur voluptatem modi repellendus, officia illo enim
-              voluptates totam sit impedit cum ab dolorum. Lorem ipsum dolor
-              sit amet consectetur adipisicing elit. Autem iusto porro sit ab
-              perferendis non modi vel omnis, cum corporis necessitatibus
-              totam, eum dicta itaque deserunt delectus culpa voluptate
-              quaerat.lor Lorem ipsum dolor sit amet consectetur, adipisicing
-              elit.
-            </p>
-          </div>
-          <h3>TOOLS USED</h3>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JAVASCRIPT</li>
-            <li>etc..</li>
-          </ul>
-          <h3>VIEW PROJECT</h3>
-          <ul>
-            <li>github link</li>
-            <li>working project link</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills section  -->
-    <section id="skills">
-      <h2 id="about-title" class="title">Skills</h2>
-      <div class="row inline row-flex">
-
-      </div>
-    </section>
-  </div>
-
-  <script type="text/javascript" src="./assets/js/script.js"></script>
-</body>
-
+    <script type="text/javascript" src="./assets/js/script.js"></script>
+  </body>
 </html>
