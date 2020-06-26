@@ -77,29 +77,6 @@ codeDisplay()
 
 // navmenu code
 let linkList = document.getElementsByClassName("link-contain");
-// opening nav menu
-navmenu.addEventListener("click", (e) => {
-  e.preventDefault();
-  changeBodyClass(true);
-});
-let closeBtn = document.getElementsByClassName("close");
-
-//closing navmenu
-navmenuclose[0].addEventListener("click", (e) => {
-  e.preventDefault();
-
-  changeBodyClass(false);
-});
-
-//nav links clicked closes the nav menu and brings client to specific part of page
-linkList[0].addEventListener("click", (e) => {
-  // check to make sure screen is on mobilw
-  if (e.view.screen.width < 770) {
-    if (e.target.matches("a") && e.target.className === "link-same-page") {
-      changeBodyClass(false);
-    }
-  }
-});
 
 //determines whether the navmenu should be open or closed and body overflow be locked for scrolling or not
 let changeBodyClass = (add) => {
@@ -117,3 +94,27 @@ let changeBodyClass = (add) => {
     closeBtn[0].classList.remove("fade-in");
   }
 };
+
+//nav links clicked closes the nav menu and brings client to specific part of page
+linkList[0].addEventListener("click", (e) => {
+  // check to make sure screen is on mobilw
+  if (e.view.screen.width < 770) {
+    if (e.target.matches("a") && e.target.className === "link-same-page") {
+      changeBodyClass(false);
+    }
+  }
+});
+
+// opening nav menu
+navmenu.addEventListener("click", (e) => {
+  e.preventDefault();
+  changeBodyClass(true);
+});
+let closeBtn = document.getElementsByClassName("close");
+
+//closing navmenu
+navmenuclose[0].addEventListener("click", (e) => {
+  e.preventDefault();
+
+  changeBodyClass(false);
+});
