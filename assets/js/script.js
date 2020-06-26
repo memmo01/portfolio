@@ -90,4 +90,5 @@ navmenuclose.addEventListener("click", function (e) {
   e.preventDefault();
   let nmenu = document.getElementsByClassName("nav-menu");
   nmenu[0].classList.remove("active-nav");
+  document.body.classList.remove("active-nav-mobile");
 });
