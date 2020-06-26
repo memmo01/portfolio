@@ -435,7 +435,7 @@ header #profile-img {
     height: 560px;
   }
   .nav-menu {
-    height: 105%;
+    height: 100%;
   }
   .nav-contact {
     margin-top: 200px;
@@ -445,6 +445,7 @@ header #profile-img {
   }
   .active-nav-mobile {
     overflow-y: hidden;
+    position: fixed;
   }
   .row-flex {
     flex-direction: column;
