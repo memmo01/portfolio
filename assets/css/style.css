@@ -155,9 +155,11 @@ body {
   padding: 20px 0;
 }
 
-.nav-menu #close {
+.close {
   position: absolute;
   right: 20px;
+  transition: 1s;
+  opacity: 0;
 }
 
 .active-nav {
@@ -428,6 +430,12 @@ header #profile-img {
   text-align: right;
 }
 
+.fade-in {
+  opacity: 1;
+}
+.fade-out {
+  opacity: 0;
+}
 .clearfix {
   clear: both;
 }

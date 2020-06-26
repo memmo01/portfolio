@@ -1,6 +1,6 @@
 let skills = ["javasript", "es6", "jQuery", "HTML", "CSS"];
 let navmenu = document.getElementById("hamburger");
-let navmenuclose = document.getElementById("close");
+let navmenuclose = document.getElementsByClassName("close");
 let dynamicCodeEl = document.getElementsByClassName("dynamic-code");
 let code = ` let displaySkills = () => {
       let count = 0;
@@ -82,9 +82,10 @@ navmenu.addEventListener("click", (e) => {
   e.preventDefault();
   changeBodyClass(true);
 });
+let closeBtn = document.getElementsByClassName("close");
 
 //closing navmenu
-navmenuclose.addEventListener("click", (e) => {
+navmenuclose[0].addEventListener("click", (e) => {
   e.preventDefault();
 
   changeBodyClass(false);
@@ -103,11 +104,16 @@ linkList[0].addEventListener("click", (e) => {
 //determines whether the navmenu should be open or closed and body overflow be locked for scrolling or not
 let changeBodyClass = (add) => {
   let nmenu = document.getElementsByClassName("nav-menu");
+
   if (add === true) {
     document.body.classList.add("active-nav-mobile");
     nmenu[0].classList.add("active-nav");
+    //add fade in of close button
+    closeBtn[0].classList.add("fade-in");
   } else if (add === false) {
     document.body.classList.remove("active-nav-mobile");
     nmenu[0].classList.remove("active-nav");
+    //fade out close button
+    closeBtn[0].classList.remove("fade-in");
   }
 };
