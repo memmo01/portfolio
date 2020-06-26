@@ -434,6 +434,9 @@ header #profile-img {
   header {
     height: 560px;
   }
+  .nav-menu {
+    height: 105%;
+  }
   .nav-contact {
     margin-top: 200px;
   }
