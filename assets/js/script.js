@@ -93,7 +93,7 @@ navmenuclose[0].addEventListener("click", function (e) {
 
 //nav links clicked closes the nav menu and brings client to specific part of page
 linkList[0].addEventListener("click", (e) => {
-  // check to make sure screen is on mobilw
+  // check to make sure screen is on mobile
   if (e.view.screen.width < 770) {
     if (e.target.matches("a") && e.target.className === "link-same-page") {
       changeBodyClass(false);
@@ -117,3 +117,11 @@ function changeBodyClass(add) {
     closeBtn[0].classList.remove("fade-in");
   }
 }
+let left = document.getElementsByClassName("sect-left");
+let right = document.getElementsByClassName("sect-right");
+setTimeout(function () {
+  let y = [...left, ...right];
+  y.forEach(function (item) {
+    item.style.transform = "translateX(0%)";
+  });
+}, 2000);
