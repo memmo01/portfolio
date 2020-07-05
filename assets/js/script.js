@@ -2,6 +2,29 @@ let skills = ["javasript", "es6", "jQuery", "HTML", "CSS"];
 let navmenu = document.getElementById("hamburger");
 let navmenuclose = document.getElementsByClassName("close");
 let dynamicCodeEl = document.getElementsByClassName("dynamic-code");
+let portfolio = document.getElementById("port");
+let portfolio2 = document.getElementById("port2");
+let portfolio3 = document.getElementById("port3");
+
+//scroll responsive animation
+window.addEventListener("scroll", function (e) {
+  if (window.pageYOffset + 350 > portfolio.offsetTop) {
+    runTextMovement("portfolio-right-movement", 0);
+  }
+  if (window.pageYOffset + 350 > portfolio2.offsetTop) {
+    runTextMovement("portfolio-left-movement", 0);
+  }
+  if (window.pageYOffset + 350 > portfolio3.offsetTop) {
+    runTextMovement("portfolio-right-movement", 1);
+  }
+});
+
+function runTextMovement(location, index) {
+  let move = document.getElementsByClassName(location);
+
+  move[index].style.transform = "translateX(0%)";
+}
+
 let code = ` let displaySkills = () => {
       let count = 0;
       let skillList = document.getElementById("dynamic-list");
