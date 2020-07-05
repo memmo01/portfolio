@@ -104,6 +104,7 @@ linkList[0].addEventListener("click", (e) => {
 //determines whether the navmenu should be open or closed and body overflow be locked for scrolling or not
 function changeBodyClass(add) {
   let nmenu = document.getElementsByClassName("nav-menu");
+  nmenu[0].style.transition = "1s";
 
   if (add === true) {
     document.body.classList.add("active-nav-mobile");
