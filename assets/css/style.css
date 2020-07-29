@@ -130,9 +130,7 @@ table {
 
 /* APPLICATION CODE WRITTEN  */
 
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Mulish:wght@300&family=Playfair+Display&display=swap");
 html,
 body {
   width: 100%;
@@ -342,6 +340,10 @@ header #profile-img {
   background-color: #364857;
   color: white;
   padding: 92px 0 92px 0;
+  font-family: "Mulish", sans-serif;
+}
+#about-title {
+  text-align: left;
 }
 #about .sect-right {
   width: 40%;
@@ -358,7 +360,6 @@ header #profile-img {
   margin: auto;
 }
 
-.sect-txt-left,
 .sect-txt-right,
 .sect-txt {
   padding: 20px 55px;
@@ -371,15 +372,18 @@ header #profile-img {
 
 #portfolio {
   background-color: rgba(0, 0, 0, 0.1);
+  font-family: "Mulish", sans-serif;
 }
 
 .portfolio-right-movement {
   transform: translateX(100%);
   transition: 1s;
+  padding-left: 30px;
 }
 .portfolio-left-movement {
   transform: translateX(-100%);
   transition: 1s;
+  padding-right: 10px;
 }
 #portfolio img {
   width: 80%;
@@ -569,5 +573,9 @@ header #profile-img {
   }
   #portfolio .proj-icon {
     margin: 5px;
+  }
+  .portfolio-right-movement,
+  .portfolio-left-movement {
+    padding: 20px;
   }
 }

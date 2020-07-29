@@ -1,46 +1,57 @@
 let skills = ["javasript", "es6", "jQuery", "HTML", "CSS"];
+//slide menu variables
 let navmenu = document.getElementById("hamburger");
 let navmenuclose = document.getElementsByClassName("close");
+
+//variable for getting html class to display dynamic code
 let dynamicCodeEl = document.getElementsByClassName("dynamic-code");
+
+//variables for the portfolio paragraphs to move on scroll
 let portfolio = document.getElementById("port");
 let portfolio2 = document.getElementById("port2");
 let portfolio3 = document.getElementById("port3");
 
-//scroll responsive animation
-window.addEventListener("scroll", function (e) {
-  if (window.pageYOffset + 350 > portfolio.offsetTop) {
-    runTextMovement("portfolio-right-movement", 0);
-  }
-  if (window.pageYOffset + 350 > portfolio2.offsetTop) {
-    runTextMovement("portfolio-left-movement", 0);
-  }
-  if (window.pageYOffset + 350 > portfolio3.offsetTop) {
-    runTextMovement("portfolio-right-movement", 1);
-  }
-});
-
-function runTextMovement(location, index) {
-  let move = document.getElementsByClassName(location);
-
-  move[index].style.transform = "translateX(0%)";
-}
-
+//string of code to display on the landing page for design
 let code = ` let displaySkills = () => {
-      let count = 0;
-      let skillList = document.getElementById("dynamic-list");
-      skillList.textContent = skills[count];
-        setInterval(()=>
+    let count = 0;
+    let skillList = document.getElementById("dynamic-list");
+    skillList.textContent = skills[count];
+      setInterval(()=>
+      {
+      count++;
+      if (count === skills.length)
         {
-        count++;
-        if (count === skills.length)
-          {
-           count = 0;
-          }
-          skillList.textContent = skills[count];
-          }, 2000);
+         count = 0;
         }
-          LOADING Michael's SKILLS ....`;
+        skillList.textContent = skills[count];
+        }, 2000);
+      }
+        LOADING Michael's SKILLS ....`;
 
+//code display is a promise to complete dynamically adding characters to the page and when done move to the next function
+const codeDisplay = () => {
+  return new Promise((resolve, reject) => {
+    let codeCharacters = code.split("");
+    let count = 0;
+    if (codeCharacters.length <= 0) {
+      reject("The codeCharacters has no length");
+    }
+    let dynamicCodeInt = setInterval(() => {
+      //check the length of the array. When then end has been reached, stop the setInterval and then return a resolved promise to run the displaySkills function
+      if (count === codeCharacters.length - 1) {
+        clearInterval(dynamicCodeInt);
+        resolve("done");
+      } else {
+        let span = document.createElement("span");
+        span.textContent = codeCharacters[count];
+        dynamicCodeEl[0].appendChild(span);
+        count++;
+      }
+    }, 10);
+  });
+};
+
+//adds list of skills dynamically to the page
 const displaySkills = () => {
   //empty dynamic code div so only the dynamic skills populate
   dynamicCodeEl[0].innerHTML = "";
@@ -65,28 +76,6 @@ const displaySkills = () => {
   }, 2000);
 };
 
-const codeDisplay = () => {
-  return new Promise((resolve, reject) => {
-    let codeCharacters = code.split("");
-    let count = 0;
-    if (codeCharacters.length <= 0) {
-      reject("The codeCharacters has no length");
-    }
-    let dynamicCodeInt = setInterval(() => {
-      //check the length of the array. When then end has been reached, stop the setInterval and then return a resolved promise to run the displaySkills function
-      if (count === codeCharacters.length - 1) {
-        clearInterval(dynamicCodeInt);
-        resolve("done");
-      } else {
-        let span = document.createElement("span");
-        span.textContent = codeCharacters[count];
-        dynamicCodeEl[0].appendChild(span);
-        count++;
-      }
-    }, 10);
-  });
-};
-
 // run codeDisplay and when it is done run the displaySkills function
 codeDisplay()
   .then((res) => {
@@ -97,6 +86,25 @@ codeDisplay()
   .catch((err) => {
     console.error(err);
   });
+
+//scroll responsive animation
+window.addEventListener("scroll", function (e) {
+  if (window.pageYOffset + 350 > portfolio.offsetTop) {
+    runTextMovement("portfolio-right-movement", 0);
+  }
+  if (window.pageYOffset + 350 > portfolio2.offsetTop) {
+    runTextMovement("portfolio-left-movement", 0);
+  }
+  if (window.pageYOffset + 350 > portfolio3.offsetTop) {
+    runTextMovement("portfolio-right-movement", 1);
+  }
+});
+
+function runTextMovement(location, index) {
+  let move = document.getElementsByClassName(location);
+
+  move[index].style.transform = "translateX(0%)";
+}
 
 // navmenu code
 let linkList = document.getElementsByClassName("link-contain");
@@ -141,11 +149,3 @@ function changeBodyClass(add) {
     closeBtn[0].classList.remove("fade-in");
   }
 }
-let left = document.getElementsByClassName("sect-left");
-let right = document.getElementsByClassName("sect-right");
-setTimeout(function () {
-  let y = [...left, ...right];
-  y.forEach(function (item) {
-    item.style.transform = "translateX(0%)";
-  });
-}, 2000);
