@@ -535,6 +535,9 @@ text-align:center;
     max-width:100vw;
   
   }
+  #about article{
+    width:85%;
+  }
 
   #profile-img {
     height: auto;

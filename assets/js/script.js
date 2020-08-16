@@ -89,20 +89,30 @@ codeDisplay()
 
 //scroll responsive animation
 window.addEventListener("scroll", function (e) {
-  if (window.pageYOffset + 350 > portfolio.offsetTop) {
+  console.log("window")
+  console.log(window.pageYOffset)
+  console.log("portfolio")
+  console.log(portfolio2.offsetTop)
+  if ((window.pageYOffset - 850) > portfolio.offsetTop) {
+
+
+
     runTextMovement("portfolio-right-movement", 0);
   }
-  if (window.pageYOffset + 550 > portfolio2.offsetTop) {
+  if ((window.pageYOffset - 900) > portfolio2.offsetTop) {
     runTextMovement("portfolio-right-movement", 1);
   }
-  if (window.pageYOffset + 1230 > portfolio3.offsetTop) {
+  if ((window.pageYOffset - 1020) > portfolio3.offsetTop) {
+    console.log(window.pageYOffset)
+    console.log(portfolio3.offsetTop)
     runTextMovement("portfolio-right-movement", 2);
   }
 });
 
 function runTextMovement(location, index) {
-  let move = document.getElementsByClassName(location);
 
+  let move = document.getElementsByClassName(location);
+  console.log(move[index])
   move[index].style.transform = "translateX(0%)";
 }
 
