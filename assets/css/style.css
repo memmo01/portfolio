@@ -230,21 +230,7 @@ nav img {
   position: absolute;
   right: 100px;
 }
-/* add when links are placed in **** */
 
-/* nav > ul {
-  display: inline-flex;
-  position: absolute;
-  right: 100px;
-  padding: 20px;
-} */
-/* nav li {
-  padding: 5px 10px;
-  position: relative;
-  right: 0;
-} */
-
-/* end add when links are placed in ***  */
 
 /* header area  */
 
@@ -275,10 +261,7 @@ header .sect-left {
   order: 1;
 }
 
-/* .container {
-  width: 80%;
-  margin: auto;
-} */
+
 
 .title {
   display: block;
@@ -337,42 +320,51 @@ header #profile-img {
 
 /* about section  */
 #about {
-  background-color: #364857;
-  color: white;
-  padding: 92px 0 92px 0;
+  background-color:#F6F6F6;  
+  color: black;
   font-family: "Mulish", sans-serif;
 }
 #about-title {
-  text-align: left;
+  text-align: center;
 }
-#about .sect-right {
-  width: 40%;
+#about article{
+  width:55%;
+  margin:auto;
+
 }
-#about .row {
-  width: 95%;
-  margin: auto;
+#about p{
+font-size:20px;
+text-align:center;
 }
 
-#about .border {
-  padding: 30px 0px;
-  width: 80%;
-  border: 1px solid white;
-  margin: auto;
+#about img{
+  display:block;
+  margin:auto;
+  max-width:1000px;
+  position:relative;
+  bottom:-10px;
+  z-index:0;
 }
+
+
+
 
 .sect-txt-right,
 .sect-txt {
   padding: 20px 55px;
   font-size: 20px;
-  width: 50%;
+  width: 40%;
   box-sizing: border-box;
+  overflow:hidden;
 }
 
 /* portfolio staggered section  */
 
 #portfolio {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color:#98b1b8;
   font-family: "Mulish", sans-serif;
+  position:relative;
+  z-index:2;
 }
 
 .portfolio-right-movement {
@@ -386,7 +378,7 @@ header #profile-img {
   padding-right: 10px;
 }
 #portfolio img {
-  width: 80%;
+  width: 70%;
   display: block;
 }
 
@@ -457,9 +449,7 @@ header #profile-img {
   margin-left: 30px;
 }
 
-.sect-txt-left {
-  text-align: right;
-}
+
 
 .fade-in {
   opacity: 1;
@@ -510,6 +500,7 @@ header #profile-img {
     padding-left: 25px;
   }
 
+
   .sect-txt-left,
   .sect-txt-right,
   .sect-txt,
@@ -518,8 +509,9 @@ header #profile-img {
     width: 100%;
     padding: 0;
   }
-  #about .sect-right {
-    width: 100%;
+  #about img{
+    max-width:100vw;
+  
   }
 
   #profile-img {
@@ -546,8 +538,7 @@ header #profile-img {
   #portfolio .sect-left {
     padding-right: 0;
   }
-  #portfolio .sect-right p,
-  #portfolio .sect-left p {
+  #portfolio .sect-right p{
     width: 100%;
   }
   #portfolio .sect-left {

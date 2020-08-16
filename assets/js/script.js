@@ -1,4 +1,4 @@
-let skills = ["javasript", "es6", "jQuery", "HTML", "CSS"];
+let skills = ["JavaScript", "es6", "jQuery", "Nodejs", "React", "MySQL", "MongoDB", "HTML", "CSS"];
 //slide menu variables
 let navmenu = document.getElementById("hamburger");
 let navmenuclose = document.getElementsByClassName("close");
@@ -92,11 +92,11 @@ window.addEventListener("scroll", function (e) {
   if (window.pageYOffset + 350 > portfolio.offsetTop) {
     runTextMovement("portfolio-right-movement", 0);
   }
-  if (window.pageYOffset + 350 > portfolio2.offsetTop) {
-    runTextMovement("portfolio-left-movement", 0);
-  }
-  if (window.pageYOffset + 350 > portfolio3.offsetTop) {
+  if (window.pageYOffset + 550 > portfolio2.offsetTop) {
     runTextMovement("portfolio-right-movement", 1);
+  }
+  if (window.pageYOffset + 1230 > portfolio3.offsetTop) {
+    runTextMovement("portfolio-right-movement", 2);
   }
 });
 
