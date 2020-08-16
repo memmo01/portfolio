@@ -141,7 +141,7 @@ body {
 .nav-menu {
   transform: translateX(-101%);
   position: fixed;
-  background-color: white;
+  background-color: #98b1b8;
   box-shadow: rgb(0, 0, 0) 0px 0px 5px inset;
   top: 0;
   left: 0;
@@ -174,6 +174,9 @@ body {
   text-align: center;
   padding: 5px 10px;
   font-size: 30px;
+}
+.nav-menu a:visited{
+  color:white;
 }
 .nav-menu img {
   width: 100px;
@@ -235,14 +238,18 @@ nav img {
 /* header area  */
 
 header .sect-right > h1 {
-  color: white;
+  color: #98b1b8;
   font-size: 93px;
   line-height: 1.25;
   text-align: left;
 }
+.name-title{
+  color:white;
+}
 .block {
   display: block;
 }
+
 .sect-left,
 .sect-right {
   width: 50%;
@@ -293,11 +300,16 @@ header .sect-left {
 }
 #dynamic-skill-list {
   padding-left: 10px;
+  
+}
+#dynamic-list{
+  color:#98b1b8;
+  padding-left:20px;
 }
 
 /* image style  */
 .rounded-circle {
-  border: 2px solid white;
+  border: 2px solid rgba(255,255,255,.2);
   border-radius: 50%;
 }
 
