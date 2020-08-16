@@ -89,10 +89,6 @@ codeDisplay()
 
 //scroll responsive animation
 window.addEventListener("scroll", function (e) {
-  console.log("window")
-  console.log(window.pageYOffset)
-  console.log("portfolio")
-  console.log(portfolio2.offsetTop)
   if ((window.pageYOffset - 850) > portfolio.offsetTop) {
 
 
@@ -103,8 +99,6 @@ window.addEventListener("scroll", function (e) {
     runTextMovement("portfolio-right-movement", 1);
   }
   if ((window.pageYOffset - 1020) > portfolio3.offsetTop) {
-    console.log(window.pageYOffset)
-    console.log(portfolio3.offsetTop)
     runTextMovement("portfolio-right-movement", 2);
   }
 });

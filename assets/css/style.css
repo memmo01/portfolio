@@ -464,6 +464,14 @@ text-align:center;
 
 
 }
+.skill-list-container{
+  width:fit-content;
+  margin:auto;
+  text-align:center;
+}
+.skill-list-container >img{
+  width:80px;
+}
 .tri-transition{
   margin: auto;
     display: block;
@@ -596,5 +604,8 @@ text-align:center;
   }
   .tri-transition{
     height:88px;
+  }
+  .skill-list-container >img{
+    width:60px;
   }
 }
