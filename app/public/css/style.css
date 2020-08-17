@@ -589,7 +589,7 @@ text-align:center;
     flex-direction: column;
   }
   .contact-container,.contact-container > div{
-    width:fit-content;
+    width:90%;
   }
   form{
     margin-top:50px;
