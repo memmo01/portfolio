@@ -88,21 +88,20 @@ codeDisplay()
   });
 
 //scroll responsive animation
-window.addEventListener("scroll", function (e) {
-  if ((window.pageYOffset - 850) > portfolio.offsetTop) {
+if (screen.width > 768) {
+  window.addEventListener("scroll", function () {
 
-
-
-    runTextMovement("portfolio-right-movement", 0);
-  }
-  if ((window.pageYOffset - 900) > portfolio2.offsetTop) {
-    runTextMovement("portfolio-right-movement", 1);
-  }
-  if ((window.pageYOffset - 1020) > portfolio3.offsetTop) {
-    runTextMovement("portfolio-right-movement", 2);
-  }
-});
-
+    if ((window.pageYOffset - 850) > portfolio.offsetTop) {
+      runTextMovement("portfolio-right-movement", 0);
+    }
+    if ((window.pageYOffset - 900) > portfolio2.offsetTop) {
+      runTextMovement("portfolio-right-movement", 1);
+    }
+    if ((window.pageYOffset - 1020) > portfolio3.offsetTop) {
+      runTextMovement("portfolio-right-movement", 2);
+    }
+  });
+}
 function runTextMovement(location, index) {
 
   let move = document.getElementsByClassName(location);
