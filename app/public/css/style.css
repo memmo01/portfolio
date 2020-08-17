@@ -138,6 +138,10 @@ body {
   padding: 0px;
   height: 100%;
 }
+nav{
+  position:fixed;
+  z-index:999;
+}
 .nav-menu {
   transform: translateX(-101%);
   position: fixed;
@@ -272,6 +276,7 @@ header .sect-right > h1 {
 header .row-flex {
   display: flex;
   flex-direction: row;
+  padding-top:50px;
 }
 header .sect-right {
   width: 45%;
