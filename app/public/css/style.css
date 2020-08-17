@@ -208,6 +208,7 @@ body {
   text-align: center;
   bottom: 45px;
   min-width: 430px;
+  
 }
 .nav-contact > h2 {
   font-size: 30px;
@@ -577,6 +578,7 @@ text-align:center;
     min-width: 350px;
     width: 100%;
     margin: auto;
+    position:relative
   }
   .active-nav {
     width: 100%;
