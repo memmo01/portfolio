@@ -338,6 +338,43 @@ header #profile-img {
   color: black;
   font-family: "Mulish", sans-serif;
 }
+#contact{
+  font-family: "Mulish", sans-serif;
+  padding-bottom:50px;
+  background-color:#98b1b8;"
+}
+.contact-container{
+  display:flex;width:60%;margin:auto;
+}
+.contact-container > div{
+  width:50%;text-align:center;
+}
+#contact-details >h3{
+  font-size: 30px;font-weight: 600;
+}
+#contact-details>p{
+  line-height: 3;font-size: 18px;
+}
+form {
+  margin: auto;
+  width: 70%;
+  margin:auto;
+}
+
+input,
+textarea {
+  display: block;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+label {
+  display: block;
+  text-align: left;
+}
+
 #about-title {
   text-align: center;
 }
@@ -461,6 +498,7 @@ text-align:center;
 
 #skills{
   font-family: "Mulish", sans-serif;
+  margin-bottom:100px;
 
 
 }
