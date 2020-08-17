@@ -150,6 +150,7 @@ body {
   z-index: 999;
   color: black;
   padding: 20px 0;
+  font-family: "Mulish", sans-serif;
 }
 
 .close {
@@ -174,6 +175,9 @@ body {
   text-align: center;
   padding: 5px 10px;
   font-size: 30px;
+  width:fit-content;
+  margin:auto;
+  color:white;
 }
 .nav-menu a:visited{
   color:white;
@@ -184,6 +188,12 @@ body {
   display: block;
   margin: 0 auto 20px auto;
   position: static;
+}
+#nav-email{
+  width: auto;
+  margin: auto;
+  padding: 0;
+  height: 60px;
 }
 #nav-social > a {
   display: inline-flex;
@@ -203,8 +213,11 @@ body {
   font-size: 30px;
   margin-bottom: 10px;
 }
+.nav-contact h3{
+  font-size:25px
+}
 .nav-contact > ul {
-  width: 140px;
+  width: fit-content;
   margin: auto;
 }
 .nav-contact li {
