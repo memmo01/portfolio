@@ -10,6 +10,7 @@ let dynamicCodeEl = document.getElementsByClassName("dynamic-code");
 let portfolio = document.getElementById("port");
 let portfolio2 = document.getElementById("port2");
 let portfolio3 = document.getElementById("port3");
+let portfolio4 = document.getElementById("port4");
 
 
 
@@ -50,8 +51,11 @@ if (screen.width > 768) {
     if ((window.pageYOffset - 900) > portfolio2.offsetTop) {
       runTextMovement("portfolio-right-movement", 1);
     }
-    if ((window.pageYOffset - 1020) > portfolio3.offsetTop) {
+    if ((window.pageYOffset - 980) > portfolio3.offsetTop) {
       runTextMovement("portfolio-right-movement", 2);
+    }
+    if ((window.pageYOffset - 980) > portfolio4.offsetTop) {
+      runTextMovement("portfolio-right-movement", 3);
     }
   });
 }
